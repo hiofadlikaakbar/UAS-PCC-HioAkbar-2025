@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  background-position: top right;
+  background-image: url("/assets/images/istrine akbar.jpg");
+}

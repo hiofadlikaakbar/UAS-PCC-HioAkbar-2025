@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./build/output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/wolfy.png"
+    />
+
+    <title>Linktree Akbar</title>
+  </head>
+  <body class="font-riot">
+    <div class="container mx-auto px-4" id="card">
+      <div class="flex justify-center h-screen items-center mx-auto">
+        <div
+          class="bg-gradient-to-b border-2 max-w-xs border-secondary shadow-2xl shadow-primary from-primary to-secondary rounded-md py-5 px-7"
+        >
+          <div id="head-link">
+            <img
+              src="./assets/images/Istriku.jpg"
+              alt="siwo"
+              class="rounded-full mx-auto scale-90 mb-4"
+            />
+            <h1
+              class="text-4xl whitespace-nowrap italic text-white font-semibold text-center mb-1"
+            >
+              Hio Fadlika Akbar
+            </h1>
+            <p class="text-white text-2xl italic text-center mb-4">
+              1123150077
+            </p>
+            <p class="text-white text-base italic text-center">
+              "Pengalaman unik dan seru ketika saya belajar materi tentang
+              docker dan github actions"
+            </p>
+          </div>
+          <div class="mt-6" id="links">
+            <a
+              href="https://github.com/hiofadlikaakbar"
+              target="_blank"
+              class="block mx-auto mb-3 rounded-md py-2 text-center hover:scale-[.86] duration-150 ease-in-out bg-gradient-to-b from-blue-600 to-indigo-600 text-white"
+              >Github</a
+            >
+            <a
+              href="https://www.instagram.com/hio._akbarzz/"
+              target="_blank"
+              class="block mx-auto mb-3 rounded-md py-2 text-center bg-gradient-to-b hover:scale-[.86] duration-150 ease-in-out from-blue-600 to-indigo-600 text-white"
+              >Instagram</a
+            >
+            <a
+              href="https://www.facebook.com/hio.fadlikaakbar.3"
+              target="_blank"
+              class="block mx-auto mb-3 rounded-md py-2 text-center bg-gradient-to-b hover:scale-[.86] duration-150 ease-in-out from-blue-600 to-indigo-600 text-white"
+              >Facebook</a
+            >
+            <a
+              href="https://www.linkedin.com/in/hio-fadlika-akbar-777803225/"
+              target="_blank"
+              class="block mx-auto rounded-md py-2 mb-3 text-center bg-gradient-to-b hover:scale-[.86] duration-150 ease-in-out from-blue-600 to-indigo-600 text-white"
+              >LinkedIn</a
+            >
+            <a
+              href="https://www.youtube.com/channel/UCKIKWcXXAez8RESKyXrHTgg"
+              target="_blank"
+              class="block mx-auto rounded-md py-2 text-center bg-gradient-to-b hover:scale-[.86] duration-150 ease-in-out from-blue-600 to-indigo-600 text-white"
+              >Youtube</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+      gsap.from("#card", {
+        duration: 1.3,
+        translateY: 360,
+        opacity: 0,
+        ease: "circ1.in",
+      });
+      gsap.from("#head-link", {
+        duration: 0.6,
+        delay: 1.4,
+        translateY: 24,
+        opacity: 0,
+        ease: "circ1.in",
+      });
+      gsap.from("#links", {
+        duration: 0.6,
+        delay: 2,
+        translateY: 24,
+        opacity: 0,
+        ease: "power1.in",
+      });
+    </script>
+  </body>
+</html>
